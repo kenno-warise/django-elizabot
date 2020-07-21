@@ -1,20 +1,23 @@
 {% extends 'elizabot/base.html' %}
 
-
 {% block content %}
+    <!-- ターミナル=======================-->
     <center>
-    <p>&nbsp;</p>
-    <h3>Eliza</h3>
-    <table border="0" cellspacing="10" cellpadding="0">
-    <form name="e_form" onsubmit="elizaStep();return false">
-    <tr><td colspan="2"><textarea name="e_display" cols="60" rows="20"></textarea></td></tr>
-    <tr valing="middle">
-	<td><input type="text" name="e_input" size="50"></td>
-	<td align="right"><input type="submit" value="&nbsp;Talk&nbsp;"> <input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()',100)"></td>
-    </tr>
-    </form>
-    </table>
+        <p>&nbsp;</p>
+        <h3>Eliza</h3>
+        <table border="0" cellspacing="10" cellpadding="0">
+            <form name="e_form" onsubmit="elizaStep();return false">
+                <tr>
+                    <td colspan="2"><textarea name="e_display" cols="60" rows="20"></textarea></td>
+                </tr>
+                <tr valing="middle">
+	            <td><input type="text" name="e_input" size="50"></td>
+	            <td align="right"><input type="submit" value="&nbsp;Talk&nbsp;"> <input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()',100)"></td>
+                </tr>
+            </form>
+        </table>
     </center>
+    <!-- ターミナル====================-->
 
     <p>&nbsp;</p>
     <p align="center">ターミナルのような快適なインターフェースについては <a href="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</a>.</p>
